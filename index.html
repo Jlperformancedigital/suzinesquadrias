@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Esquadrias, Vidros e Calhas | Agilidade e Qualidade</title>
+    <style>
+        :root {
+            --primary: #1a365d; /* Azul escuro - Confiança */
+            --secondary: #e53e3e; /* Vermelho - Urgência/Rapidez */
+            --light: #f7fafc;
+            --dark: #2d3748;
+        }
+
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 0; color: var(--dark); line-height: 1.6; }
+        
+        header { background: var(--primary); color: white; padding: 1rem 5%; display: flex; justify-content: space-between; align-items: center; position: sticky; top: 0; z-index: 1000; }
+        
+        .hero { background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1503387762-592dea58ef21?auto=format&fit=crop&w=1332&q=80'); 
+                height: 80vh; background-size: cover; background-position: center; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; color: white; padding: 0 20px; }
+        
+        .hero h1 { font-size: 3rem; margin-bottom: 10px; }
+        .hero p { font-size: 1.2rem; margin-bottom: 25px; max-width: 600px; }
+
+        .btn { background: var(--secondary); color: white; padding: 15px 30px; text-decoration: none; border-radius: 5px; font-weight: bold; transition: 0.3s; border: none; cursor: pointer; }
+        .btn:hover { background: #c53030; transform: scale(1.05); }
+
+        .services { padding: 50px 5%; display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; background: var(--light); }
+        .card { background: white; padding: 30px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); text-align: center; }
+        .card h3 { color: var(--primary); }
+
+        .rapidez-section { padding: 50px 5%; text-align: center; background: white; }
+        .features { display: flex; justify-content: space-around; flex-wrap: wrap; margin-top: 30px; }
+        .feature-item { flex: 1; min-width: 200px; padding: 20px; }
+        .feature-item span { font-size: 2.5rem; color: var(--secondary); display: block; }
+
+        .cta-whatsapp { position: fixed; bottom: 20px; right: 20px; background: #25d366; color: white; padding: 15px 25px; border-radius: 50px; text-decoration: none; font-weight: bold; box-shadow: 0 4px 10px rgba(0,0,0,0.3); z-index: 999; }
+
+        footer { background: var(--primary); color: white; text-align: center; padding: 20px; margin-top: 20px; }
+
+        @media (max-width: 768px) { .hero h1 { font-size: 2rem; } }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo"><strong>LOGO EMPRESA</strong></div>
+        <nav>Anos de Tradição na Região</nav>
+    </header>
+
+    <section class="hero">
+        <h1>Sua obra não pode esperar.</h1>
+        <p>Esquadrias, Vidros e Calhas com a instalação mais rápida da região. Qualidade técnica e compromisso com o seu prazo.</p>
+        <a href="https://wa.me/SEUNUMERO" class="btn">SOLICITAR ORÇAMENTO AGORA</a>
+    </section>
+
+    <section class="rapidez-section">
+        <h2>Por que somos os mais rápidos?</h2>
+        <div class="features">
+            <div class="feature-item">
+                <span>⏱️</span>
+                <h3>Visita em 24h</h3>
+                <p>Medição técnica agilizada para você não perder tempo.</p>
+            </div>
+            <div class="feature-item">
+                <span>🛠️</span>
+                <h3>Fabricação Própria</h3>
+                <p>Sem intermediários. Produzimos e instalamos com controle total.</p>
+            </div>
+            <div class="feature-item">
+                <span>🚚</span>
+                <h3>Entrega Expressa</h3>
+                <p>Logística otimizada para cumprir cronogramas rigorosos.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="services">
+        <div class="card">
+            <h3>Esquadrias de Alumínio</h3>
+            <p>Portas e janelas sob medida com vedação acústica e acabamento premium.</p>
+        </div>
+        <div class="card">
+            <h3>Vidros Temperados</h3>
+            <p>Segurança e elegância para box, sacadas, fachadas e guarda-corpos.</p>
+        </div>
+        <div class="card">
+            <h3>Calhas e Rufos</h3>
+            <p>Proteção imediata contra infiltrações com instalação técnica garantida.</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2024 Nome da Empresa - Atendendo [Sua Cidade/Região]</p>
+        <p>Endereço da Loja | Telefone: (00) 0000-0000</p>
+    </footer>
+
+    <a href="https://wa.me/SEUNUMERO" class="cta-whatsapp">
+        💬 Chamar no WhatsApp
+    </a>
+
+</body>
+</html>
